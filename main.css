@@ -1,5 +1,6 @@
 body {
     background:black;
+    overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -160,8 +161,8 @@ a {
 
 #fixed_img {
     position: absolute;
-    bottom: 55vh;
-    height: 72vh;
+    bottom: 90vh;
+    height: 80vh;
     left: -25vh;
     will-change: transform;
 }
@@ -241,7 +242,7 @@ a {
 
 @media (min-width:138vh) {
 
-    body {
+    .desktop_flex {
         display: flex;
         flex-flow: row nowrap;
     }
@@ -257,6 +258,7 @@ a {
 
     .container h1 {
         font-size: 10vh;
+        line-height: 10vh;
     }
 
     #up_ctnr {
@@ -310,7 +312,6 @@ a {
     .flex_justify {
         display:flex;
         justify-content: center;
-        height: 8vh;
     }
 
     .contact_links a {
@@ -319,7 +320,7 @@ a {
     }
 
     .contact_links a {
-        margin: -2vh 3vh 0 3vh;
+        margin: 4vh 2vh 0 2vh;
     }
 
     
@@ -342,5 +343,22 @@ a {
         position: absolute;
         right: 0;
         transform: none;
+    }
+
+    #about_me h4 {
+        font-size: calc(1.5vh + 1.5vw);
+        line-height: calc(5vh + 1vw);
+        padding-left: 38%;
+        box-sizing: border-box;
+    }
+
+    #about_me h4 b {
+        padding: 0 1vh;
+    }
+
+    #fixed_img {
+        bottom: 60vh;
+        height: 100vh;
+        left: -25vh;
     }
 }
