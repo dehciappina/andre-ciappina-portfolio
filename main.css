@@ -9,6 +9,14 @@ body, p, h1, h2, h3, h4, h5, h6 {
     font-weight: 100;
 }
 
+b {
+    font-weight: 300;
+}
+
+strong {
+    font-weight: 400;
+}
+
 a {
     text-decoration: none;
     color:inherit;
@@ -142,6 +150,46 @@ a {
         transform:scale(20);
     }
 }
+
+
+#about_me {
+    height:100vh;
+    width:100%;
+    background:white;
+    position: relative;
+    overflow: hidden;
+    padding: 7vw;
+    box-sizing: border-box;
+}
+
+#fixed_img {
+    position: absolute;
+    bottom: 62vh;
+    height: 72vh;
+    left: -25vh;
+    will-change: transform;
+}
+
+#about_me h4 {
+    color: #000;
+    font-size: calc(2.5vh + 2vw);
+    position: relative;
+    font-weight: 300;
+    text-align: right;
+    line-height: calc(2.5vh + 4vw);
+}
+
+#about_me h4 span {
+    margin: 3vh 0 0 0;
+    display: block;
+}
+
+#about_me h4 b {
+    background:#000;
+    color:white;
+    padding: 0 1vw;
+}
+
 
 
 
