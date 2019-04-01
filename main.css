@@ -39,7 +39,7 @@ a {
     height: 9vh;
     display: inline-block;
     margin: 0 1vh 2vh 1vh;
-    transition: background 1s ease-in;
+    transition: background 3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 
 .contact_links a:hover {
@@ -90,14 +90,14 @@ a {
 #up_line {
     position: absolute;
     height: 11vh;
-    width: 0.3vh;
+    width: 0.15vh;
     background: white;
     top: 0;
     right: 38vw;
 }
 
 #a_line {
-    height: 0.3vh;
+    height: 0.15vh;
     width: 100%;
     background: white;
     transform: translateX(10vw);
@@ -161,7 +161,7 @@ a {
 
 #fixed_img {
     position: absolute;
-    bottom: 90vh;
+    bottom: 50vh;
     height: 80vh;
     left: -25vh;
     will-change: transform;
@@ -187,7 +187,9 @@ a {
     padding: 0 1vw;
 }
 
-
+.display_none {
+    display: none;
+}
 
 
 
@@ -269,7 +271,6 @@ a {
     }
 
     #mid_ctnr {
-        width:50%;
         height: 38vh;
     }
 
@@ -283,17 +284,20 @@ a {
 
     .container h3 {
         margin: 1vh 0 18vh 0;
+        font-size: calc(2vh + 0.5vw);
+        letter-spacing: 0.2vh;
     }
 
     #last_jobs {
         background: #0A0A0A;
         transition:background 0.5s ease;
-        width: 40vw;
         height: 38vh;
+        width: 50vw;
+        padding-right: 0;
     }
 
     #last_jobs:hover {
-        background: #1A1A1A;
+        background: #002233;
     }
 
     .container > div {
@@ -303,6 +307,7 @@ a {
 
     #up_line {
         right: 50vw;
+        height: 38vh;
     }
 
     #row_break {
@@ -315,8 +320,8 @@ a {
     }
 
     .contact_links a {
-        width: 10vh;
-        height: 10vh;
+        width: 8vh;
+        height: 8vh;
     }
 
     .contact_links a {
@@ -325,7 +330,7 @@ a {
 
     
     .contact_links a:hover {
-        background:#222;
+        background: #AAA;
     }
 
     #last_jobs span {
@@ -348,7 +353,7 @@ a {
     #about_me h4 {
         font-size: calc(1.5vh + 1.5vw);
         line-height: calc(5vh + 1vw);
-        padding-left: 38%;
+        padding-left: 40%;
         box-sizing: border-box;
     }
 
@@ -359,6 +364,6 @@ a {
     #fixed_img {
         bottom: 60vh;
         height: 100vh;
-        left: -25vh;
+        left: -10vh;
     }
 }
