@@ -34,11 +34,11 @@ a {
     height: 9vh;
     display: inline-block;
     margin: 0 1vh 2vh 1vh;
-    transition: 1s ease-in;
+    transition: background 1s ease-in;
 }
 
 .contact_links a:hover {
-    background:#222;
+    background:#fff;
     transition: background 0.2s cubic-bezier(0, 0, 0.2, 1);
 }
 
@@ -75,6 +75,7 @@ a {
 #last_jobs span {
     display: inline-block;
     line-height: 7vh;
+    font-size: calc(2.5vh + 2vw);
 }
 
 #btn_ctnr {
@@ -260,12 +261,12 @@ a {
 
     #row_break {
         margin-right: 3vh;
-        height: 38vh;
     }
     
     .flex_justify {
         display:flex;
         justify-content: center;
+        height: 8vh;
     }
 
     .contact_links a {
@@ -275,6 +276,11 @@ a {
 
     .contact_links a {
         margin: -2vh 3vh 0 3vh;
+    }
+
+    
+    .contact_links a:hover {
+        background:#222;
     }
 
     #last_jobs span {
