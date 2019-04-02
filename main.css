@@ -57,7 +57,7 @@ a {
 }
 
 .container h2 {
-    font-size: calc(3vh + 2vw);
+    font-size: calc(2vh + 3.5vw);
     line-height: calc(5vh + 2vw);
 }
 
@@ -94,21 +94,21 @@ a {
 #up_line {
     position: absolute;
     height: 11vh;
-    width: 0.15vh;
+    width: 0.2vh;
     background: white;
     top: 0;
     right: 38vw;
     transform:scaleY(0);
-    transition:transform, 2s ease;
+    transition:transform 2s cubic-bezier(0.4, 0, 0.2, 1);
     transform-origin: top;
 }
 
 #a_line {
-    height: 0.15vh;
+    height: 0.2vh;
     width: 100%;
     background: white;
-    transform: translateX(10vw) scaleX(0);
-    transition:transform 2s ease;
+    transform: translateX(0) scaleX(0);
+    transition:transform, 2s cubic-bezier(0.4, 0, 0.2, 1);
     transform-origin: right;
 }
 
@@ -185,7 +185,7 @@ a {
     line-height: calc(2.5vh + 4vw);
     transform: translateX(100%);
     opacity:0;
-    transition:transform 1s ease, opacity 3s ease;
+    transition:transform 1s cubic-bezier(0.4, 0, 0.2, 1), opacity 2.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .show_h4 {
@@ -202,12 +202,24 @@ a {
     background:#000;
     color:white;
     padding: 0 1vw;
+    border-radius: 0.5vh;
 }
 
 .display_none {
     display: none !important;
 }
 
+::-webkit-scrollbar {
+    width: 0.5vh;
+}
+
+::-webkit-scrollbar-track {
+    background: #000; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fff; 
+}
 
 
 
@@ -256,28 +268,21 @@ a {
 
 
 
-
-
-
-@media (min-width:138vh) {
+@media (min-width:123vh) {
 
     .desktop_flex {
         display: flex;
         flex-flow: row nowrap;
     }
     
-    p, h1, h2, h3, h4, h5, h6 {
-        cursor: default;
-    }
-    
     .container h2 {
-        font-size: 6vh;
-        line-height: 8vh;
+        font-size: calc(1.5vh + 2vw);
+        line-height: calc(4vh + 2vw);
     }
 
     .container h1 {
-        font-size: 10vh;
-        line-height: 10vh;
+        font-size: calc(8vh + 1vw);
+        line-height: calc(8vh + 1vw);
     }
 
     #up_ctnr {
@@ -300,7 +305,7 @@ a {
     }
 
     .container h3 {
-        margin: 1vh 0 18vh 0;
+        margin: 2vh 0 18vh 0;
         font-size: calc(2vh + 0.5vw);
         letter-spacing: 0.2vh;
     }
@@ -337,8 +342,8 @@ a {
     }
 
     .contact_links a {
-        width: 8vh;
-        height: 8vh;
+        width: 9vh;
+        height: 9vh;
     }
 
     .contact_links a {
@@ -374,7 +379,7 @@ a {
     }
 
     #about_me h4 b {
-        padding: 0 1vh;
+        padding: 0 1vh;    
     }
 
     #fixed_img {
@@ -386,5 +391,4 @@ a {
     #about_me {
         padding: 8vh 15vh;
     }
-
 }
