@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background:black;
     overflow-x: hidden;
@@ -35,8 +39,8 @@ a {
 }
 
 .contact_links a {
-    width: 9vh;
-    height: 9vh;
+    width: calc(6vh + 3vw);
+    height: calc(6vh + 3vw);
     display: inline-block;
     margin: 0 1vh 2vh 1vh;
     transition: background 3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
@@ -94,13 +98,18 @@ a {
     background: white;
     top: 0;
     right: 38vw;
+    transform:scaleY(0);
+    transition:transform, 2s ease;
+    transform-origin: top;
 }
 
 #a_line {
     height: 0.15vh;
     width: 100%;
     background: white;
-    transform: translateX(10vw);
+    transform: translateX(10vw) scaleX(0);
+    transition:transform 2s ease;
+    transform-origin: right;
 }
 
 #row_break {
@@ -174,6 +183,14 @@ a {
     font-weight: 300;
     text-align: right;
     line-height: calc(2.5vh + 4vw);
+    transform: translateX(100%);
+    opacity:0;
+    transition:transform 1s ease, opacity 3s ease;
+}
+
+.show_h4 {
+    transform:translateX(0) !important;
+    opacity:1 !important;
 }
 
 #about_me h4 span {
@@ -289,7 +306,7 @@ a {
     }
 
     #last_jobs {
-        background: #0A0A0A;
+        background: rgba(255,255,255,0.1);
         transition:background 0.5s ease;
         height: 38vh;
         width: 50vw;
@@ -297,7 +314,7 @@ a {
     }
 
     #last_jobs:hover {
-        background: #002233;
+        background: rgba(255,255,255,0.2);
     }
 
     .container > div {
@@ -308,9 +325,6 @@ a {
     #up_line {
         right: 50vw;
         height: 38vh;
-        transform:scaleY(0);
-        transition:transform, 2s ease;
-        transform-origin: top;
     }
 
     #row_break {
@@ -350,9 +364,6 @@ a {
         background: white;
         position: absolute;
         right: 0;
-        transform: scaleX(0);
-        transition:transform 2s ease;
-        transform-origin: right;
     }
 
     #about_me h4 {
@@ -375,4 +386,5 @@ a {
     #about_me {
         padding: 8vh 15vh;
     }
+
 }
