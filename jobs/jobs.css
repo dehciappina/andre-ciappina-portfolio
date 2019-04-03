@@ -47,7 +47,7 @@
 .job_flex_container > a {
     width: 90%;
     margin:0 auto 10vw auto;
-    background:#0A0A0A;
+    background: #111;
 }
 
 .job_flex_container a aside {
@@ -191,6 +191,7 @@
         transition:background 0.3s ease-out;
         margin: 0 auto calc(2vh + 2vw) auto;
         box-shadow: none;
+        background:#0A0A0A;
     }
     .job_flex_container a aside {
         background-attachment: fixed;
@@ -218,10 +219,10 @@
     .contact_links {
         display: inline-flex;
         position: static;
-        margin: 4vh 0 0 48%;
-        width: 53%;
+        margin: 2.5vh 5vh 2.5vh 62vw;
         padding: unset;
         box-shadow: unset;
+        justify-content: inherit;
     }
 
     .selected_line {
@@ -239,7 +240,7 @@
     }
 
     .keywords {
-        margin-bottom: 2vh;
+        margin-bottom: 1vh;
     }
 
     .keywords span {

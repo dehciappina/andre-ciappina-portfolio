@@ -8,22 +8,22 @@ document.addEventListener("DOMContentLoaded", function() {
     document.body.onscroll = function() {
         fixedImg.style.transform = "translateY(" + window.pageYOffset / 1.6 + "px)"
 
-        if(window.scrollY > window.innerHeight/2) {
+        if(window.scrollY > window.innerHeight/1.382) {
             for(i = 0; i < aboutMeH4.length; ++i) {
                 aboutMeH4[i].classList.add('show_h4')
             }
             
-            document.querySelector('#up_line').style.transform = 'scaleY(' + 0 + ')'
+            document.querySelector('#up_line').classList.add('up_line_hidden')
             
             for(i = 0; i < aLine.length; ++i) {
-                aLine[i].style.transform = 'translateX(0) scaleX(' + 0 + ')'
+                aLine[i].classList.add('a_line_hidden')
             }
         } else {
             
-            document.querySelector('#up_line').style.transform = 'scaleY(' + 1 + ')'
+            document.querySelector('#up_line').classList.remove('up_line_hidden')
             
             for(i = 0; i < aLine.length; ++i) {
-                aLine[i].style.transform = 'translateX(0) scaleX(' + 1 + ')'
+                aLine[i].classList.remove('a_line_hidden')
             }
         }
     }

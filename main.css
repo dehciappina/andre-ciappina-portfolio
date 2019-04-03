@@ -103,6 +103,11 @@ a {
     transform-origin: top;
 }
 
+.up_line_hidden {
+    transition: none !important;
+    transform:scaleY(0) !important;
+}
+
 #a_line {
     height: 0.2vh;
     width: 100%;
@@ -110,6 +115,11 @@ a {
     transform: translateX(0) scaleX(0);
     transition:transform, 2s cubic-bezier(0.4, 0, 0.2, 1);
     transform-origin: right;
+}
+
+.a_line_hidden {
+    transition: none !important;
+    transform: translateX(0) scaleX(0) !important;
 }
 
 #row_break {
@@ -166,6 +176,7 @@ a {
     overflow: hidden;
     padding: 7vw;
     box-sizing: border-box;
+    box-shadow: 0 -3vw 15vw #555;
 }
 
 #fixed_img {
@@ -273,6 +284,9 @@ a {
     .desktop_flex {
         display: flex;
         flex-flow: row nowrap;
+        background-image: url(assets/main_bg.jpg);
+        background-size: 100%;
+        background-attachment: fixed;
     }
     
     .container h2 {
@@ -311,15 +325,15 @@ a {
     }
 
     #last_jobs {
-        background: rgba(255,255,255,0.1);
-        transition:background 0.5s ease;
+        box-shadow: inset 0 0vh 15vh #111;
+        transition:box-shadow 0.5s ease;
         height: 38vh;
         width: 50vw;
         padding-right: 0;
     }
 
     #last_jobs:hover {
-        background: rgba(255,255,255,0.2);
+        box-shadow: inset 0 0vh 15vh #333;
     }
 
     .container > div {
@@ -390,5 +404,6 @@ a {
 
     #about_me {
         padding: 8vh 15vh;
+        box-shadow: 0 -1vh 14vh #555;
     }
 }
