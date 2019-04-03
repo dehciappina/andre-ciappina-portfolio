@@ -177,14 +177,13 @@ a {
     padding: 7vw;
     box-sizing: border-box;
     box-shadow: 0 -3vw 15vw #555;
-}
+    background-image: url('assets/profile_photo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto 80%;
+    background-position-y: bottom;
+    background-position-x: 60%;
 
-#fixed_img {
-    position: absolute;
-    bottom: 50vh;
-    height: 80vh;
-    left: -25vh;
-    will-change: transform;
 }
 
 #about_me h4 {
@@ -287,6 +286,8 @@ a {
         background-image: url(assets/main_bg.jpg);
         background-size: 100%;
         background-attachment: fixed;
+        position: relative;
+        z-index: 1;
     }
     
     .container h2 {
@@ -396,14 +397,10 @@ a {
         padding: 0 1vh;    
     }
 
-    #fixed_img {
-        bottom: 60vh;
-        height: 100vh;
-        left: -10vh;
-    }
-
     #about_me {
         padding: 8vh 15vh;
         box-shadow: 0 -1vh 14vh #555;
+        background-size: auto 100%;
+        background-position-x: -10%;
     }
 }

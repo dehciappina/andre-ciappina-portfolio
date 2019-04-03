@@ -4,9 +4,7 @@ let aLine = document.querySelectorAll('#a_line')
 let aboutMeH4 = document.querySelectorAll('#about_me h4')
 
 document.addEventListener("DOMContentLoaded", function() {
-        fixedImg.style.transform = "translateY(" + window.pageYOffset / 1.6 + "px)"
     document.body.onscroll = function() {
-        fixedImg.style.transform = "translateY(" + window.pageYOffset / 1.6 + "px)"
 
         if(window.scrollY > window.innerHeight/1.382) {
             for(i = 0; i < aboutMeH4.length; ++i) {
