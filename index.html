@@ -8,6 +8,7 @@
     <script src="scripts/change-lang/main-page.js" defer></script>
     <script src="scripts/main-page-start.js" defer></script>
     <script src="scripts/main-scroll-events.js" defer></script>
+    <script src="scripts/show_email.js" defer></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,500" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
@@ -51,7 +52,7 @@
                         <img src="assets/contact-bts/whatsapp.svg" alt="">
                     </a>
                     
-                    <a href="#email_form" id="row_break" title="send an e-mail">
+                    <a href="#email_form" id="row_break" class="email_bt" title="send an e-mail">
                         <img src="assets/contact-bts/email.svg" alt="">
                     </a>
                 </div>
@@ -82,7 +83,7 @@
 
     <section id="about_me">
 
-        <h4 class="en_vs">Such as many <b>21st century designers and developers,</b> I discovered my potentials by <b>digging into some softwares.</b><span>From this curiosity, arose my first big professional interest - <b>photographic manipulation,</b> so I got my first job and mastered <b>Adobe Photoshop.</b></span><span>Since then, I have improved my skills in front-end <b>web development,</b> <b>UI/UX design on Illustrator,</b> video editing, digital marketing on <b>Google Ads</b> and more.</span></h4>
+        <h4 class="en_vs">Such as many <b>21st century designers and developers,</b> I discovered my potentials by <b>digging into some softwares.</b><span>From this curiosity, arose my first big professional interest - <b>photographic manipulation,</b> so I got my very first job and mastered <b>Adobe Photoshop.</b></span><span>Since then, I have improved my skills in front-end <b>web development,</b> <b>UI/UX design on Illustrator,</b> video editing, digital marketing on <b>Google Ads</b> and more.</span></h4>
 
         <h4 class="pt_vs">Assim como muitos <b>designers e desenvolvedores do século 21,</b> me descobri <b>fuçando em softwares.</b><span>Dessa curiosidade, surgiu meu primeiro grande interesse profissional - a <b>manipulação fotográfica,</b> então consegui meu primeiro emprego e dominei o <b>Adobe Photoshop.</b></span><span>Desde então, tenho me aprimorado em <b>desenvolvimento web</b> front-end, <b>design de UI/UX no Illustrator,</b> edição de vídeo, marketing digital no <b>Google Ads</b> e mais.</span></h4>
     </section>
@@ -102,5 +103,30 @@
         </svg>
 
     </aside>
+
+    <aside id="out_area"></aside>
+
+    <section id="form_container">
+
+        <span class="pt_vs">Entre em contato</span>
+        <span class="en_vs">Get in touch</span>
+
+        <form action="https://formspree.io/ciappina_andre@hotmail.com" method="POST">
+            <label class="pt_vs">Nome</label>
+            <label class="en_vs">Name</label>
+            <input type="text" name="name">
+
+            <label>E-mail</label>
+            <input type="email" name="_replyto">
+
+            <label class="pt_vs">Mensagem</label>
+            <label class="en_vs">Message</label>
+            <textarea name="message"></textarea>
+            
+            <input class="pt_vs" id="enviar" type="enviar" value="Send">
+            <input class="en_vs" id="enviar" type="submit" value="Send">
+        </form>
+    </section>
+
 </body>
 </html>
