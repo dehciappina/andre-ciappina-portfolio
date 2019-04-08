@@ -7,19 +7,24 @@
     <title>André Ciappina | Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,500" rel="stylesheet">
     <script src="../scripts/change-lang/main-page.js" defer></script>
+    <script src="../scripts/show_email.js" defer></script>
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="jobs.css">
 </head>
 <body>
-        <a href="../jobs.html" class="pt_vs back_to_mainpg">Voltar</a>
-        <a href="../jobs.html" class="en_vs back_to_mainpg">Return</a>
+    <a href="../jobs.html" class="back_to_mainpg">
+        <span class="pt_vs">Voltar</span>
+        <span class="en_vs">Return</span>
+        <img src="../assets/mobile_return.svg" alt="">
+    </a>
+
     <div class="contact_links">
         <div class="flex_justify">
             <a href="https://wa.me/5511951720100" title="Call me on WhatsApp">
                 <img src="../assets/contact-bts/whatsapp.svg" alt="">
             </a>
             
-            <a href="#email_form" id="row_break" title="send an e-mail">
+            <a href="#email_form" id="row_break" class="email_bt" title="send an e-mail">
                 <img src="../assets/contact-bts/email.svg" alt="">
             </a>
         </div>
@@ -44,15 +49,15 @@
     </div>
 
 
-    <div class="job_flex_container">
+    <div class="job_flex_container job_cover">
         <article href="jobs/playmatch.html">
             <aside class="job_img" id="estacao_hack_cover_img"></aside>
 
             <h2 class="pt_vs">Minha experiência na Estação Hack</h2>
             <h2 class="en_vs">My experiente at Facebook's Hack Station</h2>
 
-            <h3 class="pt_vs">Por André Ciappina</h3>
-            <h3 class="en_vs">By André Ciappina</h3>
+            <h3 class="pt_vs author">Por André Ciappina</h3>
+            <h3 class="en_vs author">By André Ciappina</h3>
 
             <div class="pt_vs keywords">
                 <span>design</span>
@@ -88,19 +93,19 @@
             <img class="post_img side_img" src="../assets/jobs/estacao-hack/eh4.jpeg" alt="">
 
             <div>
-                <p>Por ser tímido, a experiência de ser um instrutor diariamente foi intensa e um sucesso, apesar de cansativa. O ambiente acolhedor e moderno da Estação Hack <b>fortaleceu em mim a vontade de me tornar um verdadeiro desenvolvedor.</b></p>
+                <p>A experiência de ser um instrutor diariamente foi ótima, intensa e cansativa (pra alguém tímido como eu). O ambiente moderno e convidativo da Estação Hack fortaleceu em mim a vontade de mergulhar no mundo do desenvolvimento web.</p>
 
                 <p>A conclusão do curso trouxe um desafio maior ainda: divididos em grupos, <b>tivemos menos de um mês para desenvolver uma solução qualquer envolvendo as linguagens que aprendemos</b>, com apresentação de até três minutos para mais de cem convidados da Estação Hack. <b>A sensação de apresentar uma ideia genuína para toda essa gente foi a maior deste dois meses valiosos.</b></p>
 
-                <p>O conceito de app que eu apresentei continuou em desenvolvimento mesmo depois que terminei meu trabalho como Ninja. Você pode saber mais pelo post sobre o <b>Playmatch</b> que fiz aqui:</p>
+                <p>O conceito de app que eu apresentei continuou em desenvolvimento mesmo depois de terminado meu trabalho como Ninja. Você pode saber mais pelo post sobre o <b>Playmatch</b> que fiz aqui:</p>
 
-                <a href="playmatch.html">Playmatch</a>
+                <a href="playmatch.html">Sobre o Playmatch</a>
             </div>
         </div>
         
-        <img class="post_img great_img" src="../assets/jobs/estacao-hack/certificado_eh.jpg" alt="">
+        <img class="post_img great_img img_shadow" src="../assets/jobs/estacao-hack/certificado_eh.jpg" alt="">
 
-        <img class="post_img med_img" src="../assets/jobs/estacao-hack/eh3.jpeg" alt="">
+        <img class="post_img med_img img_shadow" src="../assets/jobs/estacao-hack/eh3.jpeg" alt="">
     </div>
 
     <div class="post_content en_vs">
@@ -113,9 +118,9 @@
             <img class="post_img side_img" src="../assets/jobs/estacao-hack/eh4.jpeg" alt="">
 
             <div>
-                <p>As a shy being, the experience of being an instructor daily was intense and a success, even if tiring. The very modern and welcoming Hack Station's environment <b>strenghtened on me the will to become a real developer.</b></p>
+                <p>The experience of being an instructor daily was great, intense and tiring (for someone shy like me). The very modern and welcoming Hack Station's environment <b>strenghtened on me the will to dive into the web development world.</b></p>
 
-                <p><b>The conclusion of my classes brought an even bigger challenge: saparated in groups, we had less than a month to develop any solution involving the languages we've learned</b>, with an presentation of up to three minutes to more than 100 Station guests. <b>The sensation of introducing a fully genuine idea to all this people was the greatest I had in these two valuable months.</b></p>
+                <p><b>The conclusion of my classes brought an even bigger challenge: saparated in groups, we had less than a month to develop any solution involving the languages we've learned</b>, with an presentation of up to three minutes for more than 100 Station guests. <b>The sensation of introducing a fully genuine idea to all this people was the greatest I had in these two valuable months.</b></p>
 
                 <p>The app concept I introduced was kept in development even after my instructorship was done. You can know more by the post about <b>Playmatch</b> I've made here:</p>
 
@@ -123,11 +128,34 @@
             </div>
         </div>
         
-        <img class="post_img great_img" src="../assets/jobs/estacao-hack/certificado_eh.jpg" alt="">
+        <img class="post_img great_img img_shadow" src="../assets/jobs/estacao-hack/certificado_eh.jpg" alt="">
 
-        <img class="post_img med_img" src="../assets/jobs/estacao-hack/eh3.jpeg" alt="">
+        <img class="post_img med_img img_shadow" src="../assets/jobs/estacao-hack/eh3.jpeg" alt="">
 
     </div>
 
+    <aside id="out_area"></aside>
+
+    <section id="form_container">
+
+        <span class="pt_vs">Entre em contato</span>
+        <span class="en_vs">Get in touch</span>
+
+        <form action="https://formspree.io/ciappina_andre@hotmail.com" method="POST">
+            <label class="pt_vs">Nome</label>
+            <label class="en_vs">Name</label>
+            <input type="text" name="name">
+
+            <label>E-mail</label>
+            <input type="email" name="_replyto">
+
+            <label class="pt_vs">Mensagem</label>
+            <label class="en_vs">Message</label>
+            <textarea name="message"></textarea>
+            
+            <input class="pt_vs" id="enviar" type="enviar" value="Send">
+            <input class="en_vs" id="enviar" type="submit" value="Send">
+        </form>
+    </section>
 </body>
 </html>

@@ -8,6 +8,7 @@ let showingForm = false;
 let alternarEmail = function() {
 
     if(showingForm === false) {
+        emailForm.style.transition = "transform " + 0.6 + "s ease, opacity " + 0.6 + "s ease, visibility " + 0.6 + "s ease"
         outArea.style.display = "initial";
         emailForm.classList.add('hide_form')
         showingForm = true;
